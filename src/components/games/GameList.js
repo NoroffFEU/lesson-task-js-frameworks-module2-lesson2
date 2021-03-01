@@ -34,7 +34,7 @@ function GameList() {
 	}, []);
 
 	if (loading) {
-		return <Spinner animation="grow" variant="info" />;
+		return <Spinner animation="grow" variant="info" className="loader" />;
 	}
 
 	if (error) {
