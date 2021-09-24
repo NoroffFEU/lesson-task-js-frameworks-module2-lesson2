@@ -8,7 +8,7 @@ This API URL returns a list of games.
 https://api.rawg.io/api/games
 ```
 
-Get your own API key for the RAWG API at [https://rawg.io/apidocs)](https://rawg.io/apidocs)
+Get your own API key for the RAWG API at [https://rawg.io/apidocs](https://rawg.io/apidocs)
 
 Make a fetch request to the URL and display the name, image, release date and rating using React Bootstrap's grid system and UI components.
 
