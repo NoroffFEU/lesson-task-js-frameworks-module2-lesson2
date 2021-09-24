@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Spinner from "react-bootstrap/Spinner";
 import Alert from "react-bootstrap/Alert";
 import { API } from "../../constants/api";
+import { KEY } from "../../constants/api";
 import GameItem from "./GameItem";
 import Heading from "../layout/Heading";
 
@@ -15,12 +16,12 @@ function GameList() {
 	useEffect(function () {
 		async function fetchData() {
 			try {
-				const response = await fetch(API);
+				const response = await fetch(API + KEY);
 
 				if (response.ok) {
 					const json = await response.json();
 					console.log(json);
-					setGames(json.data);
+					setGames(json.results);
 				} else {
 					setError("A server error occured");
 				}
@@ -46,8 +47,8 @@ function GameList() {
 			<Heading content="Games" />
 			<Row>
 				{games.map(function (game) {
-					const { slug, name, image, released, rating } = game;
-					return <GameItem key={slug} name={name} image={image} released={released} rating={rating} />;
+					const { slug, name, background_image, released, rating } = game;
+					return <GameItem key={slug} name={name} image={background_image} released={released} rating={rating} />;
 				})}
 			</Row>
 		</Container>

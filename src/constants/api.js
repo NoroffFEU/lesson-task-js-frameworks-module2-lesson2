@@ -1,1 +1,2 @@
-export const API = "https://t9jt3myad3.execute-api.eu-west-2.amazonaws.com/api/old-games";
+export const API = "https://api.rawg.io/api/games";
+export const KEY = "?key=54582cd735a340b89b17702eae51578b";
