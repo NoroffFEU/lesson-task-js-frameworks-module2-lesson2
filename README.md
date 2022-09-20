@@ -5,12 +5,10 @@ Create a new React app and install React Bootstrap.
 This API URL returns a list of games.
 
 ```
-https://api.rawg.io/api/games
+https://noroff.herokuapp.com/v1/old-games
 ```
 
-Get your own API key for the RAWG API at [https://rawg.io/apidocs](https://rawg.io/apidocs)
-
-Make a fetch request to the URL and display the name, image, release date and rating using React Bootstrap's grid system and UI components.
+Make a fetch request to the URL and display the name, genres, image and release date using React Bootstrap's grid system and UI components.
 
 > You can use any UI library but the example answer will use React Bootstrap.
 

@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 
-function GameItem({ name, image, released, rating }) {
+function GameItem({ name, image, released, genre }) {
 	return (
 		<Col>
 			<Card style={{ width: "18rem" }}>
@@ -11,7 +11,7 @@ function GameItem({ name, image, released, rating }) {
 					<Card.Title>{name}</Card.Title>
 					<div>
 						<p>Released: {released}</p>
-						<p>Rating: {rating}</p>
+						<p>Genre: {genre.join(", ")}</p>
 					</div>
 				</Card.Body>
 			</Card>
@@ -23,7 +23,7 @@ GameItem.propTypes = {
 	name: PropTypes.string.isRequired,
 	image: PropTypes.string.isRequired,
 	released: PropTypes.string,
-	rating: PropTypes.number.isRequired,
+	genre: PropTypes.array.isRequired,
 };
 
 GameItem.defaultProps = {
