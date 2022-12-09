@@ -5,7 +5,7 @@ Create a new React app and install React Bootstrap.
 This API URL returns a list of games.
 
 ```
-https://noroff.herokuapp.com/v1/old-games
+https://api.noroff.dev/api/v1/old-games
 ```
 
 Make a fetch request to the URL and display the name, genres, image and release date using React Bootstrap's grid system and UI components.
